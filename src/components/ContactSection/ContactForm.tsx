@@ -32,7 +32,7 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // Имитация отправки формы
     setTimeout(() => {
       setIsSubmitting(false);
       setFormState({ name: "", email: "", message: "" });

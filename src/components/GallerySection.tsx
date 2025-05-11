@@ -55,7 +55,7 @@ const GallerySection = () => {
                     key={index}
                     className="relative aspect-square rounded-lg overflow-hidden cursor-pointer hover-scale"
                     onClick={() => {
-                      // In a real implementation, you would open a lightbox or modal here
+                      // В реальном проекте здесь можно открыть лайтбокс или модальное окно с изображением
                       console.log("Open lightbox for image", index);
                     }}
                   >
@@ -119,9 +119,9 @@ const PhotoCarousel = ({ images }: { images: Image[] }) => {
   );
 };
 
-// Use placeholder images for demo
+// Используем заполнители изображений для примера
 const getImageUrl = (category: string, index: number) => {
-  // Generating URLs to images that might look like classroom, events, etc.
+  // Генерация URL для изображений, которые могут выглядеть как классная комната, мероприятия и т.д.
   const width = 800;
   const height = 600;
   return `https://source.unsplash.com/random/${width}x${height}/?classroom,school,education,${category}&sig=${index}`;
